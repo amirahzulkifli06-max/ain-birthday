@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday HAKHAK</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background: linear-gradient(135deg,#ffd6e7,#fff8f0);
+    color:#333;
+    overflow-x:hidden;
+}
+
+header{
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+}
+
+h1{
+    font-size:4rem;
+    color:#ff4d88;
+}
+
+.subtitle{
+    font-size:1.3rem;
+    margin-top:10px;
+}
+
+.scroll-btn{
+    margin-top:30px;
+    padding:12px 25px;
+    border:none;
+    border-radius:30px;
+    background:#ff4d88;
+    color:white;
+    cursor:pointer;
+    font-size:1rem;
+}
+
+section{
+    padding:80px 10%;
+}
+
+.section-title{
+    text-align:center;
+    color:#ff4d88;
+    margin-bottom:30px;
+    font-size:2rem;
+}
+
+.about{
+    background:white;
+    border-radius:20px;
+    padding:40px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.1);
+}
+
+.about ul{
+    margin-top:20px;
+    line-height:2;
+}
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.gallery img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    border-radius:15px;
+    transition:0.3s;
+}
+
+.gallery img:hover{
+    transform:scale(1.05);
+}
+
+.video-container{
+    display:flex;
+    justify-content:center;
+    margin-top:20px;
+}
+
+.video-container video{
+    width:30%;
+    max-width:600px;
+    border-radius:15px;
+}
+
+.memory-card{
+    background:white;
+    padding:20px;
+    border-radius:15px;
+    margin-bottom:15px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.message{
+    background:white;
+    padding:40px;
+    border-radius:20px;
+    text-align:center;
+    line-height:2;
+    box-shadow:0 5px 20px rgba(0,0,0,0.1);
+}
+
+.secret-btn{
+    display:block;
+    margin:30px auto;
+    padding:15px 30px;
+    border:none;
+    border-radius:30px;
+    background:#ff4d88;
+    color:white;
+    cursor:pointer;
+    font-size:1rem;
+}
+
+.secret-message{
+    display:none;
+    text-align:center;
+    font-size:1.3rem;
+    color:#ff4d88;
+    margin-top:20px;
+    font-weight:bold;
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+}
+
+.heart{
+    position:fixed;
+    top:-20px;
+    font-size:20px;
+    animation:fall linear forwards;
+}
+
+@keyframes fall{
+    to{
+        transform:translateY(110vh);
+    }
+}
+</style>
+</head>
+<body>
+
+<header>
+    <h1>🎂 Happy Birthday Ain 🎂</h1>
+    <p class="subtitle">A small gift made with code ❤️</p>
+
+    <h3 id="countdown" style="margin-top:20px;"></h3>
+
+    <button class="scroll-btn" onclick="scrollToSection()">
+        Open Your Surprise ✨ 👇
+    </button>
+
+</header>
+
+<section id="main-content">
+    <h2 class="section-title">About Ain 🌸</h2>
+
+    <div class="about">
+        <p>
+            Here are some things that make Ain special(😏):
+        </p>
+
+        <ul>
+            <li>✨ Always supportive</li>
+            <li>✨ Makes everyone laugh</li>
+            <li>✨ Kind-hearted</li>
+            <li>✨ Creates unforgettable memories</li>
+            <li>✨ alamak tak boleh puji lebih-lebih</li>
+            
+        </ul>
+    </div>
+</section>
+
+<section>
+    <h2 class="section-title">Our Memories 📸</h2>
+
+    <div class="gallery">
+        <img src="ain5.jpg" alt="">
+        <img src="ain2.jpg" alt="">
+        <img src="ain3.jpg" alt="">
+        <img src="ain4.jpg" alt="">
+    </div>
+    
+</section>
+
+<section>
+    <h2 class="section-title">Special Video🎥(taun ni tk edit baru hehe)</h2>
+
+
+
+    <div class="video-container">
+        <video controls>
+            <source src="song.mp4" type="video/mp4">
+        </video>
+    </div>
+</section>
+
+<section>
+    <h2 class="section-title">Top Ain Moments 🏆</h2>
+
+    <div class="memory-card">
+        🥇 The funniest moment: Balik naik bas
+    </div>
+
+    <div class="memory-card">
+        🥈 The most chaotic moment: banyak
+    </div>
+
+    <div class="memory-card">
+        🥉 The most unforgettable day: first jumpa
+    </div>
+
+    <div class="memory-card">
+        🏅 The best adventure: tk igt kita bukan keluar sgt
+    </div>
+
+    <div class="memory-card">
+        🎖️ My favorite memory with Ain: semua ECEYHH🙂‍↕️
+    </div>
+</section>
+
+<section>
+    <h2 class="section-title">A Message For You 💌</h2>
+
+    <div class="message">
+        Happy Birthday, Ain! ❤️<br><br>
+
+        Thank you for all the memories,
+        laughter, and moments we've shared.
+        I hope this year brings you happiness,
+        success, good health & everything
+        you've been wishing for.
+
+        <br><br>
+
+        Stay amazing, stay kind,
+        and I hope u will get what u want in your life. 🌷
+    </div>
+
+    <button class="secret-btn" id="btn1" onclick="firstClick()">
+        Don't Click Me 👀
+    </button>
+
+    <button class="secret-btn" id="btn2" onclick="secondClick()" style="display:none;">
+        ha kenapa tekan 😤
+    </button>
+
+    <button class="secret-btn" id="btn3" onclick="thirdClick()" style="display:none;">
+        eh serius asal tekan 😭
+    </button>
+
+    <div class="secret-message" id="secret">
+        fuyo awak tekan jugak bagus-bagus<br>
+        You're one of my favorite people. ❤️<br>
+        Happy Birthday Ain 🎂
+    </div>
+</section>
+
+<footer>
+    Made with ❤️ by AmiMondo
+</footer>
+
+<script>
+
+function scrollToSection(){
+    document.getElementById("main-content")
+    .scrollIntoView({behavior:"smooth"});
+}
+
+function firstClick(){
+    document.getElementById("btn1").style.display = "none";
+    document.getElementById("btn2").style.display = "block";
+}
+
+function secondClick(){
+    document.getElementById("btn2").style.display = "none";
+    document.getElementById("btn3").style.display = "block";
+}
+
+function thirdClick(){
+    document.getElementById("secret").style.display = "block";
+    document.getElementById("btn3").style.display = "none";
+}
+
+
+function updateCountdown(){
+
+    const birthday = new Date("2026-06-4");
+    const today = new Date();
+
+    const diff = birthday - today;
+
+    const days = Math.ceil(
+        diff / (1000 * 60 * 60 * 24)
+    );
+
+    if(days > 0){
+        document.getElementById("countdown").innerHTML =
+        "⏳ " + days + " day(s) until Ain's birthday!";
+    }
+    else{
+        document.getElementById("countdown").innerHTML =
+        "🎉 It's Ain's Birthday Today!";
+    }
+}
+
+updateCountdown();
+
+function createHeart(){
+
+    const heart = document.createElement("div");
+
+    heart.classList.add("heart");
+    heart.innerHTML = "😁";
+
+    heart.style.left = Math.random()*100 + "vw";
+
+    heart.style.animationDuration =
+    (Math.random()*3 + 3) + "s";
+
+    document.body.appendChild(heart);
+
+    setTimeout(()=>{
+        heart.remove();
+    },6000);
+}
+
+function showVideo(){
+    document.getElementById("videoSection").style.display = "block";
+}
+
+
+setInterval(createHeart,500);
+
+</script>
+
+</body>
+</html>
